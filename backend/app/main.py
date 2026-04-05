@@ -16,6 +16,7 @@ app.include_router(upload.router, prefix="/upload")
 app.include_router(analyze.router, prefix="/analyze")
 
 @app.get("/")
+@app.head("/")
 
 def root():
     return {"status": "Backend Running"}
