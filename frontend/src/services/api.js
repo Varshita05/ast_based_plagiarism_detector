@@ -9,7 +9,7 @@ export const analyzeFiles = async(file1, file2) => {
     formData.append("file1", file1);
     formData.append("file2", file2);
 
-    const response = await API.post("/analyze/", formData); 
+    const response = await API.post("/analyze", formData); 
     console.log("API response:", response.data);
     return response.data;
 };
