@@ -1,0 +1,11 @@
+docs/
+data/
+backend/Venv/
+frontend/node_modules/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+backend/tests/

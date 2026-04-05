@@ -1,0 +1,4 @@
+fastapi
+uvicorn # for fast-api
+python-multipart # for handling file uploads
+pytest # for testing
