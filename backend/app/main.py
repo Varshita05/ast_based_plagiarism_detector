@@ -6,7 +6,7 @@ app = FastAPI(title = "AST Code Plagiarism Detector")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["http://localhost:5173", "https://ast-based-plagiarism-detector.vercel.app/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
