@@ -5,7 +5,7 @@ from app.core.detection_pipeline import detect_similarity
 
 router = APIRouter()
 
-@router.post("/")
+@router.post("")
 
 async def analyze_code(file1: UploadFile = File(...), file2: UploadFile = File(...)):
     code1 = (await file1.read()).decode("utf-8")
